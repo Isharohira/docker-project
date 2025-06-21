@@ -11,6 +11,8 @@ WORKDIR /var/www/html
 #RUN wget https://templatemo.com/download/templatemo_591_villa_agency && mv templatemo_591_villa_agency templatemo_591_villa_agency.zip
 #RUN unzip templatemo_591_villa_agency.zip && cp -rf templatemo_591_villa_agency/* .
 # Expose HTTP port
+RUN wget https://templatemo.com/download/templatemo_589_lugx_gaming && mv templatemo_589_lugx_gaming templatemo_589_lugx_gaming.zip
+RUN unzip templatemo_589_lugx_gaming.zip && cp -rf templatemo_589_lugx_gaming/* .
 EXPOSE 80
 
 # Start Apache server
@@ -18,8 +20,8 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 
 #template 1
-RUN wget https://templatemo.com/download/templatemo_589_lugx_gaming && mv templatemo_589_lugx_gaming templatemo_589_lugx_gaming.zip
-RUN unzip templatemo_589_lugx_gaming.zip && cp -rf templatemo_589_lugx_gaming.zip/* .
+#RUN wget https://templatemo.com/download/templatemo_589_lugx_gaming && mv templatemo_589_lugx_gaming templatemo_589_lugx_gaming.zip
+#RUN unzip templatemo_589_lugx_gaming.zip && cp -rf templatemo_589_lugx_gaming.zip/* .
 
 
 
